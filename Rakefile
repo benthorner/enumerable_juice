@@ -1,15 +1,18 @@
-task default: [:spec, :cucumber]
+require 'rake_n_bake'
+require 'rspec/core/rake_task'
 
-task :spec do
-  require 'rspec/core/rake_task'
-  RSpec::Core::RakeTask.new(:spec)
-end
+task :default => [
+  :"spec:unit",
+  :"spec:integration",
+  :"bake:ok_rainbow"
+]
 
-task :cucumber do
-  require 'cucumber'
-  require 'cucumber/rake/task'
+namespace :spec do
+  RSpec::Core::RakeTask.new(:unit) do |t|
+    t.pattern = 'spec/unit/**/*_spec.rb'
+  end
 
-  Cucumber::Rake::Task.new(:features) do |t|
-    t.cucumber_opts = "features --format pretty"
+  RSpec::Core::RakeTask.new(:integration) do |t|
+    t.pattern = 'spec/integration/**/*_spec.rb'
   end
 end
