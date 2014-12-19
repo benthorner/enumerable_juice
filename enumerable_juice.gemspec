@@ -7,4 +7,8 @@ Gem::Specification.new do |s|
   s.authors = 'Ben Thorner'
   s.email = 'benthorner@outlook.com'
   s.license = 'GNU GPL v2.0'
+
+  s.add_development_dependency 'rspec'
+  s.add_development_dependency 'capybara'
+  s.add_development_dependency 'rake-n-bake'
 end
