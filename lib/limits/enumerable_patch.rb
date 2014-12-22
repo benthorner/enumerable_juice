@@ -1,8 +1,10 @@
 require_relative 'limited_enumerable'
 
+ROOT = EnumerableJuice::Limits
+
 module Enumerable
   def limit
-    LimitedEnumerable.new self
+    ROOT::LimitedEnumerable.new self
   end
 
   def single
