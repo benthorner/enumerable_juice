@@ -1,8 +1,3 @@
-PATH
-  remote: .
-  specs:
-    enumerable_juice (0.0.0)
-
 GEM
   remote: http://rubygems.org/
   specs:
@@ -47,6 +42,5 @@ PLATFORMS
 
 DEPENDENCIES
   capybara
-  enumerable_juice!
   rake-n-bake
   rspec

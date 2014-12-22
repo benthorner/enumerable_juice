@@ -1,3 +1,5 @@
 source 'http://rubygems.org'
 
-gemspec
+gem 'rspec'
+gem 'capybara'
+gem 'rake-n-bake'
