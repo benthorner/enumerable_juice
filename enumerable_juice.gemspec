@@ -7,4 +7,5 @@ Gem::Specification.new do |s|
   s.authors = ['Ben Thorner']
   s.email = 'benthorner@outlook.com'
   s.files = Dir['lib/**/*.rb']
+  s.homepage = 'https://github.com/benthorner/enumerable_juice'
 end
