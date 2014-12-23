@@ -1,7 +1,9 @@
 enumerable_juice
 ================
 
-A set of extensions to get the juice out of Ruby Enumerables
+A set of extensions to get the juice out of Ruby Enumerables.
+
+The documentation can be found [here](http://www.rubydoc.info/github/benthorner/enumerable_juice "Enumerable Juice Documentation").
 
 Install
 =======
