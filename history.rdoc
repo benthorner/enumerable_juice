@@ -1,0 +1,4 @@
+== 1.0.0 (28 December 2014)
+
+  * Patch enumerable with limits
+  * Create initial gem
