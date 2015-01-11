@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = 'enumerable_juice'
-  s.version = '1.0.0'
+  s.version = '1.0.1'
   s.licenses = 'GNU GPL v2.0'
   s.summary = 'Enumerable Juice'
   s.description = 'A set of extensions to get the juice out of Ruby Enumerables'
