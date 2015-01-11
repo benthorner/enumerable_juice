@@ -1,2 +1,0 @@
-export rvm_install_on_use_flag=1
-rvm --create use 2.1.5@enumerable_juice
