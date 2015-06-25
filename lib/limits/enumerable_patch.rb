@@ -1,14 +1,12 @@
 require_relative 'limited_enumerable'
 
-ROOT = EnumerableJuice::Limits
-
 module Enumerable
   ##
   # Wraps this enumerable in a LimitedEnumerable
   # to assert a limit on the number of items.
   ##
   def limit
-    ROOT::LimitedEnumerable.new self
+    EnumerableJuice::Limits::LimitedEnumerable.new self
   end
 
   ##
